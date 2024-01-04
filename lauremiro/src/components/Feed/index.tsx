@@ -4,9 +4,6 @@ import { FaLink } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { MdOutlinePushPin } from "react-icons/md";
 import contatos from "../../assets/contatos.jpg";
-import desenho1 from "../../assets/desenhos-1.jpg";
-import desenho2 from "../../assets/desenhos-2.jpg";
-import desenho3 from "../../assets/desenhos-3.jpg";
 import desenho4 from "../../assets/desenho-4.jpg";
 
 export const Feed = () => {
