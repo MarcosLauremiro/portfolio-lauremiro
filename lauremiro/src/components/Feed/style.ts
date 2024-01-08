@@ -112,13 +112,31 @@ export const Posts = styled.div`
           }
         }
         .file {
-          img {
-            width: 100%;
-            border-radius: 10px;
+          position: relative;
+          overflow: hidden;
+          .imgs {
+            transition: transform 0.5s ease;
+            display: flex;
+            img {
+              width: 100%;
+              border-radius: 10px;
+            }
           }
-          video {
-            width: 100%;
-            border-radius: 10px;
+          button{
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: none;
+            color: wheat;
+            position: absolute;
+            cursor: pointer;
+            top: 46%;
+            z-index: 100;
+          }
+          .prev{
+            left: 6%;
+          }
+          .next{
+            right: 6%;
           }
         }
       }

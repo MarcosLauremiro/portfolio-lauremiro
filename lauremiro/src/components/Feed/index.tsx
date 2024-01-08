@@ -1,12 +1,32 @@
 import { Posts } from "./style";
-import code from "../../assets/code.jpg";
 import { FaLink } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { MdOutlinePushPin } from "react-icons/md";
+import { Galery } from "./galery";
+import code from "../../assets/code.jpg";
 import contatos from "../../assets/contatos.jpg";
 import desenho4 from "../../assets/desenho-4.jpg";
+import contatosApi from "../../assets/contato_api.jpg";
+import contatosSalve from "../../assets/contatos_cadastro.jpg";
+import contatosPerfil from "../../assets/contatos_perfil.jpg";
+import desenho1 from '../../assets/desenhos-1.jpg'
+import desenho2 from '../../assets/desenhos-2.jpg'
+import desenho3 from '../../assets/desenhos-3.jpg'
 
 export const Feed = () => {
+  const imagesFullStack = [
+    contatos,
+    contatosSalve,
+    contatosPerfil,
+    contatosApi,
+  ];
+  const imgHoby = [
+    desenho4,
+    desenho1,
+    desenho2,
+    desenho3,
+  ]
+
   return (
     <Posts>
       <div className="posts-container">
@@ -34,7 +54,9 @@ export const Feed = () => {
               tragetoria, dê uma olhada <a href="/">/sobre mim</a>
             </p>
             <div className="file">
-              <img src={code} alt="" />
+              <div className="imgs">
+                <img src={code} alt="" />
+              </div>
             </div>
           </div>
           <div className="buttons">
@@ -68,7 +90,7 @@ export const Feed = () => {
               gestão de contatos e usuario.
             </p>
             <div className="file">
-              <img src={contatos} />
+              <Galery images={imagesFullStack} className="imgs"></Galery>
             </div>
           </div>
           <div className="buttons">
@@ -102,12 +124,12 @@ export const Feed = () => {
             <h1 className="title">Um Hobby</h1>
             <p className="text">
               Uma das atividades que mais aprecio é desenhar, concentrar-me e
-              transformar rabiscos em arte. Essa prática me
-              proporciona uma sensação de paz e uma conexão profunda com o
-              mundo, distante das tecnologias.
+              transformar rabiscos em arte. Essa prática me proporciona uma
+              sensação de paz e uma conexão profunda com o mundo, distante das
+              tecnologias.
             </p>
             <div className="file">
-              <img src={desenho4} alt="" />
+            <Galery images={imgHoby} className="imgs"></Galery>
             </div>
           </div>
           <div className="buttons">
