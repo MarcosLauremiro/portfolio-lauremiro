@@ -129,7 +129,7 @@ export const Posts = styled.div`
             color: wheat;
             position: absolute;
             cursor: pointer;
-            top: 46%;
+            top: 51%;
             z-index: 100;
           }
           .prev{
